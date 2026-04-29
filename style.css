@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 .welcome-screen {
   position: fixed;
   inset: 0;
@@ -540,7 +542,7 @@ font-family: "Open Sans", sans-serif;
 
 .btn-musica {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
 
   width: 60px;
@@ -569,4 +571,55 @@ font-family: "Open Sans", sans-serif;
 .btn-musica.activo {
   opacity: 1;
   pointer-events: auto;
+}
+
+.footer-brand {
+  width: 100%;
+  background: rgba(184, 159, 131, 0.9);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 20px;
+}
+
+/* Marca */
+.footer-brand .brand span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.footer-brand .brand h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Redes */
+.footer-brand .redes img {
+  width: 20px;
+
+}
+
+.footer-brand .redes img:hover {
+  transform: scale(1.2);
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+
+.footer-brand::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: rgba(255,255,255,0.3);
 }
